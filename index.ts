@@ -18,11 +18,20 @@ const createItem = () => {
   return item
 }
 
+const appendItemSync = (item: Element) => {
+  document.querySelector("#root")!.appendChild(item)
+}
+
+// @ts-ignore
+const appendItemAsync = (item: Element) => window.requestIdleCallback(() => {
+  appendItemSync(item)
+})
+
 const render = () => {
   const loop = Array.from(new Array(COUNT))
   loop.forEach((v, i) => {
     const item = createItem()
-    document.querySelector("#root")!.appendChild(item)
+    appendItemAsync(item)
   })
 }
 
