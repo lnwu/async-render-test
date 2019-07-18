@@ -5,7 +5,13 @@
   "repository": "git@github.com:lnwu/async-render-test.git",
   "author": "lnwu <wind2729@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "build:watch": "tsc -w",
+    "serve": "serve",
+    "start": "run-p build:watch serve"
+  },
   "devDependencies": {
+    "npm-run-all": "^4.1.5",
     "serve": "^11.1.0",
     "typescript": "^3.5.3"
   }
