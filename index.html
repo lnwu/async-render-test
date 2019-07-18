@@ -7,7 +7,12 @@
   <title>Async Render Test</title>
 </head>
 <body>
-    <header>A List</header>
+    <header>
+      <label for="#inactive-test">Test inactive: <input type="text" id="inactive-test"></label>
+      <br>Count: <span id="count">0</span>
+      <br>JS evaluate time: <span id="js-time">0</span> ms
+      <br>Dom layout time: <span id="dom-time">0</span> ms
+    </header>
     <ul id="root"></ul>
     <script src="./index.js"></script>
 </body>
