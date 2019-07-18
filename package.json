@@ -1,0 +1,12 @@
+{
+  "name": "async-render-test",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:lnwu/async-render-test.git",
+  "author": "lnwu <wind2729@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "serve": "^11.1.0",
+    "typescript": "^3.5.3"
+  }
+}
